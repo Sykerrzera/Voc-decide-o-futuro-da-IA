@@ -1,0 +1,55 @@
+:root {
+    --cor-fundo: #0a0a0a; /* fundo bem escuro, quase preto */
+    --cor-principal: #1a1a1a; /* tom profundo e sombrio */
+    --cor-secundaria: #2c2f36; /* cinza escuro com leve azul, como aço */
+    --cor-destaque: #9e0000; /* vermelho sangue, usado nos detalhes e destaques */
+    --cor-texto: #e1e1e1; /* texto claro para contraste, mas não branco puro */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://wallpapercave.com/wp/wp2469454.jpg'); /* imagem temática */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Georgia', serif;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--cor-secundaria);
+    box-shadow: 0 0 15px rgba(158, 0, 0, 0.6); /* brilho vermelho suave */
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--cor-destaque);
+    text-shadow: 0 0 8px rgba(158, 0, 0, 0.7);
+    font-family: 'UnifrakturCook', cursive; /* fonte gótica opcional (via Google Fonts) */
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
